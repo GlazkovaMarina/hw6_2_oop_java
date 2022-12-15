@@ -1,6 +1,6 @@
 package model;
 
-public class UserMapper {
+public class NoteMapper {
     public String map(Note note) {
         return String.format("%d,%s,%s", note.getId(), note.getHeader(), note.getText());
     }
