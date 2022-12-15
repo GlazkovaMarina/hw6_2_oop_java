@@ -5,12 +5,12 @@ import java.util.List;
 
 
 public class RepositoryFile implements Repository{
-    private UserMapper mapper;
+    private NoteMapper mapper;
     private FileOperation fileOperation;
 
     public RepositoryFile(FileOperation fileOperation) {
         this.fileOperation = fileOperation;
-        this.mapper = new UserMapper();
+        this.mapper = new NoteMapper();
     }
     @Override
     public LinkedList<Note> getAllNotes() {
